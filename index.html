@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://use.fontawesome.com/a820f4c3f7.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>NG | INDIA </title>
+
+
+</head>
+
+<body>
+    <div class="mobile-nav">
+
+    </div>
+    <div class="alert alert-danger alert_for_mob" role="alert" style="display: none;">
+        <h4 class="alert-heading">Mobile Screen!</h4>
+        <p>For full functionality of this site it is necessary to use a desktop screen.</p>
+    </div>
+    <div class="main-body">
+        <div class="left-nav">
+            <div class="upper-section">
+                <img src="./assets/img/geologosquare.png" alt="">
+            </div>
+            <div class="lower-section social-icons">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="left-main">
+            <div class="left-main-nav">
+                <div class="logo">
+                    <img src="./assets/img/ng-logo-nav.webp" alt="">
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left-main-body">
+                <h4>
+                    ANIMALS
+                </h4>
+                <h1>
+                    The status of leopard in India
+                </h1>
+                <p>
+                    Although small in size, the leopard, estimated at around 13,000 in India, is a skilled and versatile
+                    hunter. But the fact is that there are six leopard deaths for every tiger death in the country. This
+                    situation can change only if there is a specific leopard conservation policy that will realise the
+                    country's potential to host an even larger population of this often ignored cat.
+                </p>
+                <div class="btn-group">
+                    <button>Read More</button>
+                    <button>View NewsLetter</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-main">
+            <div class="right-main-nav">
+                <input type="search" name="seachbox" id="searchmain" placeholder="Search...">
+                <img src="https://source.unsplash.com/random/?person/" alt="crypto" alt="">
+                <div class="about-profile">
+                    <h3>
+                        Hi, Mihir
+                    </h3>
+                    <ul>
+                        <li>YOUR PROFILE</li>
+                        <li>SAVED</li>
+                        <li>SETTINGS</li>
+                        <li>LOGOUT</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>
+                <span class="indian">
+                    इंडियन
+
+                </span>
+                <span class="cheetah">
+                    leopard
+                </span>
+            </h3>
+            <img src="./assets/img/geran-de-klerk-wYy3rvvgjAU-unsplash 1@2x.png" alt="">
+        </div>
+    </div>
+
+
+
+    <noscript>
+        <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading">JavaScript is disabled!</h4>
+            <p>For full functionality of this site it is necessary to enable JavaScript. Here are the <a
+                    href="http://www.enable-javascript.com/" target="_blank">instructions how to enable JavaScript in
+                    your
+                    web browser</a>.</p>
+        </div>
+    </noscript>
+    <script>
+        flag = 0
+        document.querySelector('.right-main-nav > img').addEventListener('click', (e) => {
+            if (flag === 0) {
+                document.querySelector('.about-profile').style.display = 'block';
+                flag = 1;
+            }
+            else {
+                document.querySelector('.about-profile').style.display = 'none';
+                flag = 0;
+            }
+        })
+    </script>
+    <script>
+        window.addEventListener('resize', (e) => {
+            console.log(window.innerWidth)
+            // SHOW ERROR FOR MOBILE SCREEN
+            if (window.innerWidth < 389) {
+                document.querySelector('.alert_for_mob').style.display = 'block';
+                document.querySelector('.main-body').style.display = 'none';
+            }
+            else {
+                document.querySelector('.alert_for_mob').style.display = 'none';
+                document.querySelector('.main-body').style.display = 'flex';
+
+            }
+        })
+        window.addEventListener('load', (e) => {
+            console.log(window.innerWidth)
+            // SHOW ERROR FOR MOBILE SCREEN
+            if (window.innerWidth < 389) {
+                document.querySelector('.alert_for_mob').style.display = 'block';
+                document.querySelector('.main-body').style.display = 'none';
+            }
+            else {
+                document.querySelector('.alert_for_mob').style.display = 'none';
+                document.querySelector('.main-body').style.display = 'flex';
+
+            }
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>
