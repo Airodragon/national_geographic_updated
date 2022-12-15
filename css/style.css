@@ -378,8 +378,8 @@ body {
 }
 
 .btn-group>button:last-child:hover {
-    border: 1px solid #FFCA18;
-    padding: 0.4rem calc(0.8rem - 1px);
+    /* border: 1px solid #FFCA18; */
+    padding: 0.4rem 0.8rem;
     text-decoration: underline;
 }
 
